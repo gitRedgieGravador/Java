@@ -69,7 +69,7 @@ public class CRUD {
     }
 
     public static void deleteCourse() {
-        String id = Ask.require("Account ID");
+        String id = Ask.require("Course ID");
         for (int i = 0; i < course.size(); ++i) {
             if (id.equals(course.get(i).getCourse_id())) {
                 course.remove(i);
